@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Be my Valentine? </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Bubble container -->
+  <div class="bubble-container">
+    <div class="bubble" style="--i: 1;"></div>
+    <div class="bubble" style="--i: 2;"></div>
+    <div class="bubble" style="--i: 3;"></div>
+    <!-- Add more bubbles as you like -->
+  </div>
+
+  <div class="container">
+    <h1>will you be my valentine? 👉🏽👈🏽</h1>
+    <img src="https://media.giphy.com/media/j0d7S4Nn9wQ7xQVder/giphy.gif?cid=790b76112gxw9uzlbfr1b8b490f18vo9zqi5m1nxx92apr5l&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="300">
+      
+    <!-- Buttons below the image -->
+    <div class="button-container">
+      <button id="yes">Yes 💕</button>
+      <button id="no">No 💔</button>
+    </div>
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="popup" class="modal">
+    <div class="modal-content">
+      <h2>good choice 🙈💕</h2>
+      <img src="https://media.giphy.com/media/FKPrLmw9t5ZY877s64/giphy.gif?cid=790b76112gxw9uzlbfr1b8b490f18vo9zqi5m1nxx92apr5l&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="300">
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<footer>
+  <p>made with 💖 by Saifa</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+<script>
+  document.getElementById('yes').addEventListener('click', function() {
+    confetti();
+  });
+</script>
